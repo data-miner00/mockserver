@@ -1,2 +1,12 @@
+# Dependencies
+
 node_modules/
+
+# Environment variables
+
 .env
+
+# Static folders
+
+api/
+static/
