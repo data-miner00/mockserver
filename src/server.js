@@ -1,8 +1,9 @@
 const express = require("express");
 const cors = require("cors");
-const { port, host } = require("./config");
 const path = require("path");
 const fs = require("fs");
+
+const { port, host } = require("./config");
 
 const staticPath = path.join("./", "static");
 const apiPath = path.join("./", "api");
