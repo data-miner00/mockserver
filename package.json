@@ -6,7 +6,10 @@
   "scripts": {
     "static": "cd static && browser-sync start --server",
     "serve": "node src/server.js",
-    "dev": "nodemon src/server.js"
+    "dev": "nodemon src/server.js",
+    "clear:static": "del /S static",
+    "clear:api": "del /S api",
+    "clear:both": "npm run clear:static && npm run clear:api"
   },
   "keywords": [],
   "author": "",
