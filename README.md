@@ -1,4 +1,4 @@
-# Local Server Lite
+# Mockserver Lite
 
 A minimal local server built with Express and Browsersync
 
