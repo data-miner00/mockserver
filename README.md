@@ -59,3 +59,18 @@ However, you may edit to suits your use case by running the server in developmen
 
 - Static files: After providing `my-img.jpg` in `/static` folder, the file can be accessed via `http://localhost:****/my-img.jpg`
 - API: After providing data `sample.json` in `/api` folder, the data can be accessed via `http://localhost:****/sample`
+
+### Delete files
+
+```sh
+# Remove all files in api folder only
+npm run clear:api
+
+# Remove all files in static folder only
+npm run clear:static
+
+# Remove all files in both static and api folder
+npm run clear:both
+```
+
+The commands are used to clean up the residual files used in the previous projects to give it a fresh start. A prompt will ask for your confirmation upon activating the commands to remove files respectively.
