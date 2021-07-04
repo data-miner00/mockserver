@@ -44,6 +44,8 @@ This will run the static file server with browsersync at localhost port 3000. Th
 
 ### Hosting static files and API endpoints
 
+#### Using Node.js
+
 ```sh
 npm run serve
 
@@ -54,6 +56,23 @@ npm run dev
 Usually, the files in the src folder only acts as the entry point for the server and might not need to deal with them for hosting purposes.
 
 However, you may edit to suits your use case by running the server in development mode which will spin up a nodemon listener for the server.
+
+#### Using Deno (New)
+
+```sh
+# With Node.js/npm installed in computer
+npm run serve:deno
+
+# Without Node.js/npm installed
+deno run --allow-net --allow-read --unstable src/server.ts
+```
+
+The server used in Deno is called [abc](https://deno.land/x/abc@v1.3.3), which is similar to express in Node.
+
+##### Todos:
+
+- [ ] Add automatic refresh with Denon
+- [ ] Convert json loading into Promise
 
 ### Accessing data examples
 
