@@ -3,7 +3,7 @@ const cors = require("cors");
 const path = require("path");
 const fs = require("fs");
 
-const { port } = require("./config");
+const { port } = require("./config.js");
 
 const staticPath = path.join("./", "static");
 const apiPath = path.join("./", "api");
