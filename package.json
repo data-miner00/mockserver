@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "static": "cd static && browser-sync start --server",
+    "serve:deno": "deno run --allow-net --allow-read --unstable src/server.ts",
     "serve": "node src/server.js",
     "dev": "nodemon src/server.js",
     "clear:static": "del /S static",
