@@ -34,11 +34,8 @@ filenames.forEach((filename) => {
   const fileData: any = JSON.parse(
     Deno.readTextFileSync(`./api/${filename[0]}.${filename[1]}`)
   );
-  console.log(fileData);
+
   app.get(`/${filename[0]}`, (context) => fileData);
 });
 
-app
-  .static("/", staticPath)
-  // .file("/", path.join(staticPath, "index.html"))
-  .start({ port });
+app.static("/", staticPath).start({ port });
